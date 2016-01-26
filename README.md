@@ -1,6 +1,6 @@
 # React Native Android TabLayout native component example
 
-This is a functionality showcase of [the TabLayout component for React Native](/AlbertBrand/react-native-android-tablayout).
+This is a functionality showcase of [the TabLayout component for React Native](https://github.com/AlbertBrand/react-native-android-tablayout).
 
 ## Run the example
 
