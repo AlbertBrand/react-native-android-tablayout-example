@@ -3,11 +3,17 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start"
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "tunnel": "adb reverse tcp:8081 tcp:8081",
+    "test": "./run_integration_test.sh"
   },
   "dependencies": {
     "react-native": "^0.18.0",
     "react-native-android-tablayout": "0.0.13",
     "react-native-vector-icons": "^1.1.0"
+  },
+  "devDependencies": {
+    "appium": "^1.4.16",
+    "mocha": "^2.4.2"
   }
 }
