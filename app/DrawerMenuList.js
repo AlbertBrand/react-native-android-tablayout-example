@@ -6,14 +6,15 @@ import React, {
   TouchableHighlight,
   View,
 } from 'react-native';
+import Labels from './Labels';
 
 const ds = new ListView.DataSource({
   rowHasChanged: (r1, r2) => r1 !== r2
 });
 
 export default class DrawerMenuList extends Component {
-  constructor(props:any) {
-    super(props);
+  constructor() {
+    super(...arguments);
     this.state = {
       dataSource: ds.cloneWithRows(this.props.routes),
     };
@@ -37,8 +38,9 @@ export default class DrawerMenuList extends Component {
   _renderRow(route:any, i:number) {
     return (
       <View key={i}>
-        <TouchableHighlight onPress={() => this.props.onPressRow(route)}>
-          <View style={styles.row}>
+        <TouchableHighlight
+          onPress={() => this.props.onPressRow(route)}>
+          <View style={styles.row} accessibilityLabel={Labels.Drawer.itemPrefix + route.title}>
             <Text style={styles.rowTitleText}>
               {route.title}
             </Text>

@@ -6,10 +6,11 @@ import React, {
   ViewPagerAndroid,
 } from 'react-native';
 import { Tab, TabLayout } from 'react-native-android-tablayout'
+import Labels from './Labels';
 
 export default class ViewPagerTabLayout extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super(...arguments);
     this.state = {
       pagePosition: 0,
     };
@@ -22,9 +23,9 @@ export default class ViewPagerTabLayout extends Component {
           style={styles.tabLayout}
           selectedTab={this.state.pagePosition}
           onTabSelected={this._setPagePosition.bind(this)}>
-          <Tab name="Tab 1"/>
-          <Tab name="Tab 2"/>
-          <Tab name="Tab 3"/>
+          <Tab name="Tab 1" accessibilityLabel={Labels.ViewPager.tab1}/>
+          <Tab name="Tab 2" accessibilityLabel={Labels.ViewPager.tab2}/>
+          <Tab name="Tab 3" accessibilityLabel={Labels.ViewPager.tab3}/>
         </TabLayout>
         <ViewPagerAndroid
           style={styles.viewPager}

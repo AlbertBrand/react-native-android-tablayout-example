@@ -11,8 +11,8 @@ import DrawerMenuList from './DrawerMenuList';
 import SimpleTabLayout from './SimpleTabLayout';
 
 export default class App extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super(...arguments);
     this.state = {
       route: ROUTES[0]
     };

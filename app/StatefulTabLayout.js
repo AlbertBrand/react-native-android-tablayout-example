@@ -6,10 +6,11 @@ import React, {
   View
 } from 'react-native';
 import { Tab, TabLayout } from 'react-native-android-tablayout'
+import Labels from './Labels';
 
 export default class StatefulTabLayout extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super(...arguments);
     this.state = {
       pagePosition: 2, // start on third tab
     };
@@ -24,16 +25,18 @@ export default class StatefulTabLayout extends Component {
           onTabSelected={(e:Event) => {
             this.setState({ pagePosition: e.nativeEvent.position });
           }}>
-          <Tab name="Tab 1"/>
-          <Tab name="Tab 2"/>
-          <Tab name="Tab 3"/>
+          <Tab name="Tab 1" accessibilityLabel={Labels.Stateful.tab1}/>
+          <Tab name="Tab 2" accessibilityLabel={Labels.Stateful.tab2}/>
+          <Tab name="Tab 3" accessibilityLabel={Labels.Stateful.tab3}/>
         </TabLayout>
         <TouchableOpacity
           style={styles.button}
           onPress={() => {
             this.setState({ pagePosition: 1 });
           }}>
-          <Text>Switch to second tab</Text>
+          <View accessibilityLabel={Labels.Stateful.button}>
+            <Text>Switch to second tab</Text>
+          </View>
         </TouchableOpacity>
       </View>
     );
