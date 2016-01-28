@@ -27,7 +27,7 @@ export default class App extends Component {
         ref={(drawer) => { this.drawer = drawer; }}
         renderNavigationView={this._renderNavigationView.bind(this)}>
         <ToolbarAndroid
-          navIcon={require('./img/hamburger_menu.png')}
+          navIcon={{uri: 'hamburger_menu'}}
           onIconClicked={() => this.drawer.openDrawer()}
           style={styles.navBar}
           subtitle={this.state.route.title}

@@ -18,9 +18,12 @@ export default class SimpleTabLayout extends Component {
   render() {
     return (
       <View>
-        <TabLayout style={styles.tabLayout}>
+        <TabLayout
+          style={styles.tabLayout}
+          selectedTabIndicatorColor="green">
           <Tab
             name="Tab 1"
+            textColor="rgb(0,0,255)"
             accessibilityLabel={Labels.Simple.tab1}
             onTabSelected={()=>{ this.setState({tabSelected: 1}) }}/>
           <Tab

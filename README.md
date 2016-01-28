@@ -26,11 +26,11 @@ You can switch between different examples via the drawer menu:
 * [ViewPagerTabLayout](app/ViewPagerTabLayout.js)
 * [ScrollableTabLayout](app/ScrollableTabLayout.js)
 
-## Test
+## Integration test
 
 Have a device connected with developer mode turned on or a running emulator ready.
 Then run the integration test locally with:
 
 ```bash
-./run_integration_test.sh
+npm run integration-test
 ```
