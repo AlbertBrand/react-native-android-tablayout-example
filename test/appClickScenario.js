@@ -128,6 +128,23 @@ describe("appClickScenario", function () {
       .click()
       .elementByAccessibilityId(Labels.DynamicProps.tab1)
       .click()
+
+      .elementByAccessibilityId(Labels.DynamicProps.button)
+      .click()
+  });
+
+  it('should switch to the CenteredTabLayout', function () {
+    return driver.goToRoute("CenteredTabLayout");
+  });
+
+  it('should click through the CenteredTabLayout tabs', function () {
+    return driver
+      .elementByAccessibilityId(Labels.Centered.tab2)
+      .click()
+      .elementByAccessibilityId(Labels.Centered.tab3)
+      .click()
+      .elementByAccessibilityId(Labels.Centered.tab1)
+      .click()
   });
 
   after(function () {

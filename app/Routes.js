@@ -4,6 +4,7 @@ import StatefulTabLayout from './StatefulTabLayout';
 import ViewPagerTabLayout from './ViewPagerTabLayout';
 import ScrollableTabLayout from './ScrollableTabLayout';
 import DynamicPropsTabLayout from './DynamicPropsTabLayout';
+import CenteredTabLayout from './CenteredTabLayout';
 
 export const ROUTES = [{
   title: 'SimpleTabLayout',
@@ -23,4 +24,7 @@ export const ROUTES = [{
 }, {
   title: 'DynamicPropsTabLayout',
   component: DynamicPropsTabLayout
+}, {
+  title: 'CenteredTabLayout',
+  component: CenteredTabLayout
 }];

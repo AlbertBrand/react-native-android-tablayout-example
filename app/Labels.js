@@ -37,6 +37,11 @@ module.exports = {
     tab3: 'Dynamic props tab 3',
     button: 'Change tabs',
   },
+  Centered: {
+    tab1: 'Centered tab 1',
+    tab2: 'Centered tab 2',
+    tab3: 'Centered tab 3',
+  },
   Drawer: {
     itemPrefix: 'Menu item ',
   },
