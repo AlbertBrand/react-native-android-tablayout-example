@@ -2,6 +2,8 @@
 
 This is a functionality showcase of [the TabLayout component for React Native](https://github.com/AlbertBrand/react-native-android-tablayout).
 
+![Animated example](http://i.imgur.com/KHpkF3S.gif)
+
 ## Run the example
 
 Install NPM dependencies once:
@@ -25,6 +27,8 @@ You can switch between different examples via the drawer menu:
 * [StatefulTabLayout](app/StatefulTabLayout.js)
 * [ViewPagerTabLayout](app/ViewPagerTabLayout.js)
 * [ScrollableTabLayout](app/ScrollableTabLayout.js)
+* [DynamicPropsTabLayout](app/DynamicPropsTabLayout.js)
+* [CenteredTabLayout](app/CenteredTabLayout.js)
 
 ## Integration test
 
