@@ -22,7 +22,7 @@ function start_appium() {
 }
 
 function assemble_release_apk() {
-  cd android && ./gradlew assembleRelease && cd ..
+  (cd android && ./gradlew assembleRelease)
 }
 
 function wait_for_appium() {

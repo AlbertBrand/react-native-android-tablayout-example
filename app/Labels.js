@@ -31,6 +31,12 @@ module.exports = {
     tab8: 'Scrollable tab 8',
     tab9: 'Scrollable tab 9',
   },
+  DynamicProps: {
+    tab1: 'Dynamic props tab 1',
+    tab2: 'Dynamic props tab 2',
+    tab3: 'Dynamic props tab 3',
+    button: 'Change tabs',
+  },
   Drawer: {
     itemPrefix: 'Menu item ',
   },

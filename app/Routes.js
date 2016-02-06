@@ -3,6 +3,7 @@ import IconsOnTopTabLayout from './IconsOnTopTabLayout';
 import StatefulTabLayout from './StatefulTabLayout';
 import ViewPagerTabLayout from './ViewPagerTabLayout';
 import ScrollableTabLayout from './ScrollableTabLayout';
+import DynamicPropsTabLayout from './DynamicPropsTabLayout';
 
 export const ROUTES = [{
   title: 'SimpleTabLayout',
@@ -19,4 +20,7 @@ export const ROUTES = [{
 }, {
   title: 'ScrollableTabLayout',
   component: ScrollableTabLayout
+}, {
+  title: 'DynamicPropsTabLayout',
+  component: DynamicPropsTabLayout
 }];

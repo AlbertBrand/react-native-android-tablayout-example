@@ -116,6 +116,20 @@ describe("appClickScenario", function () {
       .click()
   });
 
+  it('should switch to the DynamicPropsTabLayout', function () {
+    return driver.goToRoute("DynamicPropsTabLayout");
+  });
+
+  it('should click through the DynamicPropsTabLayout tabs', function () {
+    return driver
+      .elementByAccessibilityId(Labels.DynamicProps.tab2)
+      .click()
+      .elementByAccessibilityId(Labels.DynamicProps.tab3)
+      .click()
+      .elementByAccessibilityId(Labels.DynamicProps.tab1)
+      .click()
+  });
+
   after(function () {
     return driver.quit();
   });
