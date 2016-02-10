@@ -2,7 +2,7 @@
 
 This is a functionality showcase of [the TabLayout component for React Native](https://github.com/AlbertBrand/react-native-android-tablayout).
 
-![Animated example](http://i.imgur.com/KHpkF3S.gif)
+![Animated example](https://i.imgur.com/nKFVnu4.gif)
 
 ## Run the example
 
@@ -29,6 +29,7 @@ You can switch between different examples via the drawer menu:
 * [ScrollableTabLayout](app/ScrollableTabLayout.js)
 * [DynamicPropsTabLayout](app/DynamicPropsTabLayout.js)
 * [CenteredTabLayout](app/CenteredTabLayout.js)
+* [CustomViewTabLayout](app/CustomViewTabLayout.js)
 
 ## Integration test
 

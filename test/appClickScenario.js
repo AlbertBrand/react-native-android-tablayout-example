@@ -147,6 +147,20 @@ describe("appClickScenario", function () {
       .click()
   });
 
+  it('should switch to the CustomViewTabLayout', function () {
+    return driver.goToRoute("CustomViewTabLayout");
+  });
+
+  it('should click through the CustomViewTabLayout tabs', function () {
+    return driver
+      .elementByAccessibilityId(Labels.CustomView.tab2)
+      .click()
+      .elementByAccessibilityId(Labels.CustomView.tab3)
+      .click()
+      .elementByAccessibilityId(Labels.CustomView.tab1)
+      .click()
+  });
+
   after(function () {
     return driver.quit();
   });

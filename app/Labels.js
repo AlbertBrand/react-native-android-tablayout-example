@@ -42,6 +42,11 @@ module.exports = {
     tab2: 'Centered tab 2',
     tab3: 'Centered tab 3',
   },
+  CustomView: {
+    tab1: 'Custom view tab 1',
+    tab2: 'Custom view tab 2',
+    tab3: 'Custom view tab 3',
+  },
   Drawer: {
     itemPrefix: 'Menu item ',
   },
