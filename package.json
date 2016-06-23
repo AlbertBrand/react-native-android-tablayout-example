@@ -8,15 +8,16 @@
     "integration-test": "./run_integration_test.sh"
   },
   "dependencies": {
-    "react-native": "^0.19.0",
-    "react-native-android-tablayout": "^0.2.0",
-    "react-native-vector-icons": "^1.1.0"
+    "react": "15.1.0",
+    "react-native": "0.28.0",
+    "react-native-android-tablayout": "0.3.0",
+    "react-native-vector-icons": "2.0.3"
   },
   "devDependencies": {
-    "appium": "^1.4.16",
-    "chai": "^3.5.0",
-    "chai-as-promised": "^5.2.0",
-    "mocha": "^2.4.2",
-    "wd": "^0.4.0"
+    "appium": "1.5.3",
+    "chai": "3.5.0",
+    "chai-as-promised": "5.3.0",
+    "mocha": "2.5.3",
+    "wd": "0.4.0"
   }
 }
